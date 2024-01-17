@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="app.css" />
+
+    <title>
+      GitHub Profile Search using JavaScript - @code.scientist x @codingtorque
+    </title>
+  </head>
+
+  <body>
+    <!-- Further Code here -->
+    <div class="backdrop" id="backdrop"></div>
+    <div class="container">
+      <h1 class="headerTitle">Github Profile Finder</h1>
+      <div class="searchContainer">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Enter GitHub Username"
+        />
+        <button onclick="fetchGithubUser()">Search</button>
+      </div>
+      <div id="loader" class="loader"></div>
+      <div class="resultsContainer">
+        <div class="detailsContainer" id="userDetails"></div>
+        <div class="repoContainer" id="repoDetails">
+          <h2 id="noRepoFound">No Public repositories found</h2>
+          <div id="repositories" class="repositories-container"></div>
+          <div id="pagination" class="pagination"></div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
